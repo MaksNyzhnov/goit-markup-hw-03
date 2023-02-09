@@ -1,0 +1,126 @@
+:root {
+  --main-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --secondary-brand-color: #404bbf;
+  --main-brand-color: #4d5ae5;
+}
+body {
+  color: var(--main-text-color);
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+}
+ul {
+  list-style: none;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+.section-title {
+  color: var(--secondary-text-color);
+
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+.headline {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+}
+/* header */
+.logo {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-first-part {
+  color: var(--main-brand-color);
+}
+.logo-header-part {
+  color: var(--secondary-text-color);
+}
+address {
+  font-style: inherit;
+}
+
+/* nav */
+.nav-links {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+}
+.link:hover,
+.link:focus {
+  color: var(--secondary-brand-color);
+}
+.auth-links {
+  color: inherit;
+}
+.auth-links:hover,
+.auth-links:focus {
+  color: var(--secondary-brand-color);
+}
+/* footer */
+.footer {
+  background-color: var(--secondary-text-color);
+}
+.logo-footer-part {
+  color: #ffffff;
+}
+.footer-text {
+  color: #e7e9fc;
+}
+/* hero */
+.hero {
+  background-color: var(--secondary-text-color);
+}
+.hero-title {
+  color: #ffffff;
+
+  font-size: 56px;
+  line-height: 1.07;
+}
+.hero-button {
+  color: #ffffff;
+  background-color: var(--main-brand-color);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: none;
+}
+.hero-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-brand-color);
+}
+.hero-button:focus {
+  background-color: var(--secondary-brand-color);
+}
+/* features */
+.feature-name
+/* team section */
+.team-section {
+  background-color: #f4f4fd;
+}
+/* portfolio page */
+.filter-btn {
+  color: var(--main-brand-color);
+  background-color: #f4f4fd;
+  border-color: #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.filter-btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: var(--secondary-brand-color);
+}
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--secondary-brand-color);
+}
