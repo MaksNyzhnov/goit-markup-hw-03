@@ -12,25 +12,70 @@ body {
 
   letter-spacing: 0.02em;
 }
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.center {
+  margin: 0 auto;
+}
+p {
+  margin: 0;
+}
 ul {
   list-style: none;
+}
+.text-padding-reset {
+  padding-left: 0;
 }
 .link {
   color: inherit;
   text-decoration: none;
 }
+.header-box .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
   color: var(--secondary-text-color);
+  text-align: center;
 
   font-size: 36px;
   line-height: 1.1;
   text-transform: capitalize;
 }
 .headline {
+  margin-top: 0;
+  margin-bottom: 8px;
   color: var(--secondary-text-color);
   font-weight: 500;
 }
+
 /* header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-box {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.address-box {
+  display: flex;
+  gap: 40px;
+}
 .logo {
   font-family: 'Raleway';
   font-weight: 800;
@@ -52,6 +97,7 @@ address {
 
 /* nav */
 .nav-links {
+  margin: 0;
   color: var(--secondary-text-color);
   font-weight: 500;
 }
@@ -60,38 +106,38 @@ address {
   color: var(--secondary-brand-color);
 }
 .auth-links {
+  margin: 0;
   color: inherit;
 }
-.auth-links:hover,
-.auth-links:focus {
+.auth-links .link:hover,
+.auth-links .link:focus {
   color: var(--secondary-brand-color);
 }
-/* footer */
-.footer {
-  background-color: var(--secondary-text-color);
-}
-.logo-footer-part {
-  color: #ffffff;
-}
-.footer-text {
-  color: #e7e9fc;
-}
+
 /* hero */
 .hero {
+  padding: 188px 0;
   background-color: var(--secondary-text-color);
+  height: 600px;
+  text-align: center;
 }
 .hero-title {
   color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 64px;
 
   font-size: 56px;
   line-height: 1.07;
 }
 .hero-button {
+  padding: 16px 32px;
   color: #ffffff;
   background-color: var(--main-brand-color);
   font-weight: 500;
   letter-spacing: 0.04em;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .hero-button:hover {
   cursor: pointer;
@@ -101,18 +147,74 @@ address {
   background-color: var(--secondary-brand-color);
 }
 /* features */
-.feature-name
+
+.feature-list {
+  display: flex;
+}
+
+.feature-list .item {
+  width: calc((100% - 72) / 4);
+  margin-right: 24px;
+}
+.feature-list .item:last-child {
+  margin-right: 0;
+}
+/* what are wew doing section */
+.work-list {
+  display: flex;
+  margin-bottom: 120px;
+}
+.work-list .item {
+  margin-right: 24px;
+}
+.work-list .item:last-child {
+  margin-right: 0;
+}
 /* team section */
 .team-section {
   background-color: #f4f4fd;
 }
+.team-section > .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-list .item {
+  padding-bottom: 32px;
+  background-color: #fff;
+
+  text-align: center;
+}
+/* footer */
+.footer {
+  height: 310px;
+  background-color: var(--secondary-text-color);
+}
+.footer > .container {
+  padding-top: 100px;
+}
+.logo-footer-part {
+  color: #ffffff;
+}
+.footer-text {
+  width: 264px;
+  margin-top: 16px;
+  color: #e7e9fc;
+}
 /* portfolio page */
+.portfolio-section {
+  background-color: ##e5e5e5;
+}
 .filter-btn {
   color: var(--main-brand-color);
   background-color: #f4f4fd;
   border-color: #e7e9fc;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .filter-btn:hover {
@@ -123,4 +225,40 @@ address {
 .filter-btn:focus {
   color: #ffffff;
   background-color: var(--secondary-brand-color);
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 168px;
+  margin-bottom: 72px;
+}
+.filter-list .item {
+  margin-right: 24px;
+}
+.filter-list .item:last-child {
+  margin-right: 0px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin-bottom: 120px;
+}
+.portfolio-list .item {
+  background-color: #f4f4fd;
+}
+.portfolio-list .item h2 {
+  margin-left: 16px;
+  margin-top: 32px;
+}
+.porfolio-name {
+  font-weight: 500;
+  font-size: 20px;
+}
+.job-type {
+  margin-left: 16px;
+  margin-bottom: 32px;
+}
+.display-none {
+  display: none;
 }
