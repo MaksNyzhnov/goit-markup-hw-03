@@ -266,18 +266,21 @@ address {
 .portfolio-list .item {
   background-color: #f4f4fd;
 }
-.portfolio-list .item h2 {
-  margin-left: 16px;
-  margin-top: 32px;
+
+.porfolio-info {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  background: #ffffff;
+
+  border: 1px solid #e7e9fc;
 }
 .porfolio-name {
   font-weight: 500;
   font-size: 20px;
 }
-.job-type {
-  margin-left: 16px;
-  margin-bottom: 32px;
-}
+
 .display-none {
   display: none;
 }
