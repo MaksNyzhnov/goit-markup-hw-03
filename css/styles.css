@@ -12,6 +12,14 @@ body {
 
   letter-spacing: 0.02em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -188,7 +196,7 @@ address {
 .team-section {
   background-color: #f4f4fd;
 }
-.team-section > .container {
+.team-section {
   padding-bottom: 120px;
 }
 .team-list {
@@ -211,7 +219,7 @@ address {
 .footer {
   background-color: var(--secondary-text-color);
 }
-.footer > .container {
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -274,7 +282,9 @@ address {
   padding-left: 16px;
   background: #ffffff;
 
-  border: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
 }
 .porfolio-name {
   font-weight: 500;
